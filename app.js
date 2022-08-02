@@ -11,12 +11,12 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs')
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-priyanshu:Arya1213@cluster0.ueqp6.mongodb.net/blogDB", {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
